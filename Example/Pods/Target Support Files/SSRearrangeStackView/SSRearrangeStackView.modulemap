@@ -1,0 +1,6 @@
+framework module SSRearrangeStackView {
+  umbrella header "SSRearrangeStackView-umbrella.h"
+
+  export *
+  module * { export * }
+}

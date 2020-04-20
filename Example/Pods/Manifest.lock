@@ -1,0 +1,16 @@
+PODS:
+  - SSRearrangeStackView (0.1.0)
+
+DEPENDENCIES:
+  - SSRearrangeStackView (from `../`)
+
+EXTERNAL SOURCES:
+  SSRearrangeStackView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SSRearrangeStackView: db5918f37c120fdff70d20ec2e56574de9da8d7c
+
+PODFILE CHECKSUM: 64ceabcbb67f7d60f1cb87e7c47aa2f58468d9d6
+
+COCOAPODS: 1.8.4

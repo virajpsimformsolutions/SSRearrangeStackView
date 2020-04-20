@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Text-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SSRearrangeStackView_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="c3w-yl-sxn" customClass="SSRearrangeStackView" customModule="SSRearrangeStackView">
+                                <rect key="frame" x="16" y="44" width="343" height="734"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sWf-Fn-SLD">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="122.33333333333333"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Xd-bc-Z99">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="14"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="14" id="zC0-8H-G2E"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <size key="shadowOffset" width="0.0" height="1"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sak-hN-GLO">
+                                                <rect key="frame" x="0.0" y="13.999999999999993" width="343" height="108.33333333333331"/>
+                                                <state key="normal" image="icoFacebook"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.82906142979452058" blue="0.30971746575342468" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="9Xd-bc-Z99" firstAttribute="leading" secondItem="sWf-Fn-SLD" secondAttribute="leading" id="4Xu-Ze-R3C"/>
+                                            <constraint firstAttribute="trailing" secondItem="sak-hN-GLO" secondAttribute="trailing" id="Aqn-jZ-FpA"/>
+                                            <constraint firstAttribute="trailing" secondItem="9Xd-bc-Z99" secondAttribute="trailing" id="BGe-a5-cRF"/>
+                                            <constraint firstItem="sak-hN-GLO" firstAttribute="leading" secondItem="sWf-Fn-SLD" secondAttribute="leading" id="Lu3-t3-7G6"/>
+                                            <constraint firstItem="9Xd-bc-Z99" firstAttribute="top" secondItem="sWf-Fn-SLD" secondAttribute="top" id="fwh-Td-onQ"/>
+                                            <constraint firstItem="sak-hN-GLO" firstAttribute="top" secondItem="9Xd-bc-Z99" secondAttribute="bottom" id="pgI-eq-Pfn"/>
+                                            <constraint firstAttribute="bottom" secondItem="sak-hN-GLO" secondAttribute="bottom" id="s80-vC-LHA"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5XO-3P-MmN">
+                                        <rect key="frame" x="0.0" y="122.33333333333334" width="343" height="122.33333333333334"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVK-DU-l6x">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="14"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="14" id="xPp-GH-CzO"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <size key="shadowOffset" width="0.0" height="1"/>
+                                            </label>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceF-3q-cIA">
+                                                <rect key="frame" x="0.0" y="13.999999999999993" width="343" height="108.33333333333331"/>
+                                                <state key="normal" image="icoYoutube"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.20392156859999999" green="0.71182041952054798" blue="0.74191994863013699" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="ceF-3q-cIA" firstAttribute="top" secondItem="EVK-DU-l6x" secondAttribute="bottom" id="6MN-SK-4aR"/>
+                                            <constraint firstAttribute="trailing" secondItem="ceF-3q-cIA" secondAttribute="trailing" id="74k-Kv-gYl"/>
+                                            <constraint firstAttribute="trailing" secondItem="EVK-DU-l6x" secondAttribute="trailing" id="Tyx-yx-wwg"/>
+                                            <constraint firstItem="ceF-3q-cIA" firstAttribute="leading" secondItem="5XO-3P-MmN" secondAttribute="leading" id="ePO-Ii-s4z"/>
+                                            <constraint firstAttribute="bottom" secondItem="ceF-3q-cIA" secondAttribute="bottom" id="s1x-oK-k3G"/>
+                                            <constraint firstItem="EVK-DU-l6x" firstAttribute="top" secondItem="5XO-3P-MmN" secondAttribute="top" id="vu0-1S-3zO"/>
+                                            <constraint firstItem="EVK-DU-l6x" firstAttribute="leading" secondItem="5XO-3P-MmN" secondAttribute="leading" id="yLk-Ti-7zo"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="atW-kY-N0O">
+                                        <rect key="frame" x="0.0" y="244.66666666666671" width="343" height="122.33333333333334"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Dt-j3-eQj">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="14"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="14" id="ZWq-Xg-fPe"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <size key="shadowOffset" width="0.0" height="1"/>
+                                            </label>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tH-td-6XU">
+                                                <rect key="frame" x="0.0" y="13.999999999999993" width="343" height="108.33333333333331"/>
+                                                <state key="normal" image="icoInstagram"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.61657213184931503" blue="0.39546767979452052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="4Dt-j3-eQj" secondAttribute="trailing" id="0Fr-gI-yrq"/>
+                                            <constraint firstAttribute="bottom" secondItem="0tH-td-6XU" secondAttribute="bottom" id="7B6-RH-goT"/>
+                                            <constraint firstItem="0tH-td-6XU" firstAttribute="leading" secondItem="atW-kY-N0O" secondAttribute="leading" id="JmE-2g-XxN"/>
+                                            <constraint firstItem="0tH-td-6XU" firstAttribute="top" secondItem="4Dt-j3-eQj" secondAttribute="bottom" id="Z2s-80-Bjm"/>
+                                            <constraint firstAttribute="trailing" secondItem="0tH-td-6XU" secondAttribute="trailing" id="jlz-CS-zaA"/>
+                                            <constraint firstItem="4Dt-j3-eQj" firstAttribute="leading" secondItem="atW-kY-N0O" secondAttribute="leading" id="m1u-NL-UdR"/>
+                                            <constraint firstItem="4Dt-j3-eQj" firstAttribute="top" secondItem="atW-kY-N0O" secondAttribute="top" id="z9e-P4-Kfr"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xaD-c4-mcN">
+                                        <rect key="frame" x="0.0" y="367" width="343" height="122.33333333333331"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1LP-7h-n2S">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="14"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="14" id="x1j-DK-IWu"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <size key="shadowOffset" width="0.0" height="1"/>
+                                            </label>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSm-IZ-cu9">
+                                                <rect key="frame" x="0.0" y="13.999999999999993" width="343" height="108.33333333333331"/>
+                                                <state key="normal" image="icoTwitter"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.81506849315068497" green="0.59273330479452058" blue="0.65191566780821919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="kSm-IZ-cu9" secondAttribute="bottom" id="0UX-qx-zEo"/>
+                                            <constraint firstItem="1LP-7h-n2S" firstAttribute="top" secondItem="xaD-c4-mcN" secondAttribute="top" id="D4N-Dp-kRJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="1LP-7h-n2S" secondAttribute="trailing" id="Fu9-Xi-kTT"/>
+                                            <constraint firstItem="kSm-IZ-cu9" firstAttribute="top" secondItem="1LP-7h-n2S" secondAttribute="bottom" id="Hrw-Sa-jks"/>
+                                            <constraint firstItem="1LP-7h-n2S" firstAttribute="leading" secondItem="xaD-c4-mcN" secondAttribute="leading" id="K6B-NH-lKi"/>
+                                            <constraint firstAttribute="trailing" secondItem="kSm-IZ-cu9" secondAttribute="trailing" id="UxX-VN-OZx"/>
+                                            <constraint firstItem="kSm-IZ-cu9" firstAttribute="leading" secondItem="xaD-c4-mcN" secondAttribute="leading" id="rbK-Uz-YgA"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WHm-6n-CAe">
+                                        <rect key="frame" x="0.0" y="489.33333333333331" width="343" height="122.33333333333331"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Grh-Na-1Gm">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="14"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="14" id="kHU-AM-t96"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <size key="shadowOffset" width="0.0" height="1"/>
+                                            </label>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5u-ez-8rZ">
+                                                <rect key="frame" x="0.0" y="13.999999999999993" width="343" height="108.33333333333331"/>
+                                                <state key="normal" image="icoSnapchat"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.34509803919999998" green="0.35025149828767121" blue="0.68617630273835617" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="E5u-ez-8rZ" firstAttribute="leading" secondItem="WHm-6n-CAe" secondAttribute="leading" id="1Gv-16-VN4"/>
+                                            <constraint firstAttribute="bottom" secondItem="E5u-ez-8rZ" secondAttribute="bottom" id="NbK-9c-X4m"/>
+                                            <constraint firstItem="E5u-ez-8rZ" firstAttribute="top" secondItem="Grh-Na-1Gm" secondAttribute="bottom" id="SUX-96-Q55"/>
+                                            <constraint firstAttribute="trailing" secondItem="E5u-ez-8rZ" secondAttribute="trailing" id="g7q-h8-ShK"/>
+                                            <constraint firstItem="Grh-Na-1Gm" firstAttribute="top" secondItem="WHm-6n-CAe" secondAttribute="top" id="p2I-Li-9Na"/>
+                                            <constraint firstItem="Grh-Na-1Gm" firstAttribute="leading" secondItem="WHm-6n-CAe" secondAttribute="leading" id="t4m-31-llX"/>
+                                            <constraint firstAttribute="trailing" secondItem="Grh-Na-1Gm" secondAttribute="trailing" id="wIX-OF-XKR"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ziS-Hu-D66">
+                                        <rect key="frame" x="0.0" y="611.66666666666663" width="343" height="122.33333333333337"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Lb-6n-OlD">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="14"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="14" id="HRG-Sk-6Po"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <size key="shadowOffset" width="0.0" height="1"/>
+                                            </label>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YR9-HG-MnH">
+                                                <rect key="frame" x="0.0" y="13.999999999999993" width="343" height="108.33333333333331"/>
+                                                <state key="normal" image="icoTikTok"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="YR9-HG-MnH" firstAttribute="top" secondItem="5Lb-6n-OlD" secondAttribute="bottom" id="42a-RF-sgD"/>
+                                            <constraint firstAttribute="trailing" secondItem="5Lb-6n-OlD" secondAttribute="trailing" id="6oy-DV-jij"/>
+                                            <constraint firstAttribute="trailing" secondItem="YR9-HG-MnH" secondAttribute="trailing" id="CP0-Cz-6Vh"/>
+                                            <constraint firstAttribute="bottom" secondItem="YR9-HG-MnH" secondAttribute="bottom" id="ODB-Yx-NTf"/>
+                                            <constraint firstItem="5Lb-6n-OlD" firstAttribute="leading" secondItem="ziS-Hu-D66" secondAttribute="leading" id="WCn-uv-bXz"/>
+                                            <constraint firstItem="5Lb-6n-OlD" firstAttribute="top" secondItem="ziS-Hu-D66" secondAttribute="top" id="j18-C9-byS"/>
+                                            <constraint firstItem="YR9-HG-MnH" firstAttribute="leading" secondItem="ziS-Hu-D66" secondAttribute="leading" id="vFp-LS-By3"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rearrangeEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="c3w-yl-sxn" secondAttribute="trailing" id="5Rd-P4-UAk"/>
+                            <constraint firstItem="c3w-yl-sxn" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="cb7-9H-KqQ"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="c3w-yl-sxn" secondAttribute="bottom" id="feS-D1-XCh"/>
+                            <constraint firstItem="c3w-yl-sxn" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="muG-kU-tyr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="rStackView" destination="c3w-yl-sxn" id="zru-fM-p1O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-55" y="127"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icoFacebook" width="36" height="36"/>
+        <image name="icoInstagram" width="36" height="36"/>
+        <image name="icoSnapchat" width="36" height="36"/>
+        <image name="icoTikTok" width="36" height="36"/>
+        <image name="icoTwitter" width="36" height="36"/>
+        <image name="icoYoutube" width="36" height="36"/>
+    </resources>
+</document>

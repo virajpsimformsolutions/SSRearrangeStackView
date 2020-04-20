@@ -1,0 +1,32 @@
+# references:
+# * https://www.objc.io/issues/6-build-tools/travis-ci/
+# * https://github.com/supermarin/xcpretty#usage
+
+osx_image: xcode9
+language: swift
+xcode_project: SSRearrangeStackView.xcodeproj
+xcode_workspace: SSRearrangeStackView.xcworkspace
+xcode_scheme: SSRearrangeStackView
+xcode_sdk: iphonesimulator9.3
+env:
+  global:
+    - FRAMEWORK_NAME=SSRearrangeStackView
+before_install:
+  - brew update
+  - brew outdated carthage || brew upgrade carthage
+before_script:
+  # bootstrap the dependencies for the project
+  # you can remove if you don't have dependencies
+  - carthage bootstrap
+before_deploy:
+  - carthage build --no-skip-current
+  - carthage archive $FRAMEWORK_NAME
+
+# cache: cocoapods
+# podfile: Example/Podfile
+# before_install:
+# - gem install cocoapods # Since Travis is not always on latest version
+# - pod install --project-directory=Example
+#script:
+#- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/SSRearrangeStackView.xcworkspace -scheme SSRearrangeStackView-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
+#- pod lib lint

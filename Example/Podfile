@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SSRearrangeStackView_Example' do
+  pod 'SSRearrangeStackView', :path => '../'
+
+  target 'SSRearrangeStackView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
